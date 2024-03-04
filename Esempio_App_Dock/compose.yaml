@@ -5,5 +5,7 @@ services:
       - "8000:5000"
     volumes:
     - . :/code
+    environment:
+      FLASH_DEBUG: "true"
   redis:
     image: "redis:alpine"
